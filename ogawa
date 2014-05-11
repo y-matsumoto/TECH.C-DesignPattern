@@ -1,0 +1,46 @@
+def sosu(i)
+    if i == 1 then
+        print("")
+    end
+    
+    x = 0
+    y = 0
+    
+    for x in 1..i do
+        if  i % x == 0 then
+            y += 1
+        end
+    end
+    
+    if y == 2 then
+        print(i)
+        print("\n")
+    end
+end
+
+a = 1
+for a in 1..100 do
+    sosu(a)
+end
+
+---------------------------------------
+
+def uruu(hazime,kotosi)
+    i = 0
+    x = 0
+    y = 0
+    z = 0
+    for i in hazime..kotosi do
+        x = i % 4
+        y = i % 100
+        z = i % 400
+        if y == 0 && z != 0 then
+            print("")
+        elsif x == 0 then
+            print(i)
+            print("\n")
+        end
+    end
+end
+
+uruu(0,2014)
