@@ -1,49 +1,80 @@
-*�����Ɋւ���p�^�[��
-*1.Abstract Factory �p�^�[��
-�֘A�����A�̃C���X�^���X���󋵂ɉ����ēK�؂ɐ���������@��񋟂���B
-*2.Builder �p�^�[��
-���������ꂽ�C���X�^���X�̐����ߒ����B������B
-*3.Factory Method �p�^�[��
-���ۂɐ��������C���X�^���X�Ɉˑ����Ȃ��A�C���X�^���X�̐������@��񋟂���B
-*4.Prototype �p�^�[��
-���l�̃C���X�^���X�𐶐����邽�߂ɁA���^�̃C���X�^���X�𕡐�����B
-*5.Singleton �p�^�[��
-����N���X�ɂ��āA�C���X�^���X���P��ł��邱�Ƃ�ۏ؂���B
-*[�ҏW] �\���Ɋւ���p�^�[��
-*6.Adapter �p�^�[��
-���X�֘A���̂Ȃ�2�̃N���X��ڑ�����N���X�����B
-*7.Bridge �p�^�[��
-�N���X�Ȃǂ̎����ƁA�ďo�����̊Ԃ̋��n��������N���X��p�ӂ��A�������B������B
-*8.Composite �p�^�[��
-�ċA�I�ȍ\����\������B
-*9.Decorator �p�^�[��
-����C���X�^���X�ɑ΂��A���I�ɕt���@�\��ǉ�����BFilter�Ƃ��Ă΂��B
-*10.Facade �p�^�[��
-�����̃T�u�V�X�e���̑����ƂȂ鋤�ʂ̃C���^�t�F�[�X��񋟂���B
-*11.Flyweight �p�^�[��
-�����̃C���X�^���X�����L���A�C���X�^���X�̍\�z�̂��߂̕��ׂ����炷�B
-*12.Proxy �p�^�[��
-���ʂ̃C���^�t�F�[�X�����C���X�^���X�����A���p�҂���̃A�N�Z�X��㗝����BWrapper�Ƃ��Ă΂��B
-*��[�ҏW] �U�镑���Ɋւ���p�^�[��
-*13.Chain of Responsibility �p�^�[��
-�C�x���g�̑���M���s�������̃I�u�W�F�N�g������ɂȂ��A�����̊Ԃ��C�x���g���n����Ă䂭�悤�ɂ���B
-*14.Command �p�^�[��
-�����̈قȂ鑀��ɂ��āA���ꂼ��ɑΉ�����I�u�W�F�N�g��p�ӂ��A�I�u�W�F�N�g��؂�ւ��邱�Ƃő���̐ؑւ�����������B
-*15.Interpreter �p�^�[��
-�\����͂̂��߂ɁA���@�K���𔽉f����N���X�\�������B
-*16.Iterator �p�^�[��
-�����̗v�f������I�u�W�F�N�g�̂��ׂĂ̗v�f�ɏ��ɃA�N�Z�X������@��񋟂���B�����q�B
-*17.Mediator �p�^�[��
-�I�u�W�F�N�g�Ԃ̑��ݍ�p�𒇉��I�u�W�F�N�g���`���A�I�u�W�F�N�g�Ԃ̌����x��Ⴍ����B
-*18.Memento �p�^�[��
-�f�[�^�\���ɑ΂����A�̑���̂��ꂼ����L�^���Ă����A�ȑO�̏�Ԃ̕��A�܂��͑���̍Č����s����悤�ɂ���B
-*19.Observer �p�^�[��
-�C���X�^���X�̕ω��𑼂̃C���X�^���X����Ď��ł���悤�ɂ���BListener�Ƃ��Ă΂��B
-*20.State �p�^�[��
-�I�u�W�F�N�g�̏�Ԃ�ω������邱�ƂŁA�������e��ς�����悤�ɂ���B
-*21.Strategy �p�^�[��
-�f�[�^�\���ɑ΂��ēK�p�����A�̃A���S���Y�����J�v�Z�������A�A���S���Y���̐ؑւ���e�Ղɂ���B
-*22.Template Method �p�^�[��
-����A���S���Y���̓r���o�߂ŕK�v�ȏ����𒊏ۃ��\�b�h�ɈςˁA���̎�����ς��邱�Ƃŏ������ς�����悤�ɂ���B
-*23.�EVisitor �p�^�[��
-�f�[�^�\����ێ�����N���X�ƁA����ɑ΂��ď������s���N���X�𕪗�����B
+Design Pattern(Ruby)
+=================
+Gofデザインパターン23について
+
+
+#生成に関するパターン
+
+##1.Abstract Factory パターン
+関連する一連のインスタンスを状況に応じて適切に生成する方法を提供する。
+
+##2.Builder パターン
+複合化されたインスタンスの生成過程を隠蔽する。
+
+##3.Factory Method パターン
+実際に生成されるインスタンスに依存しない、インスタンスの生成方法を提供する。
+
+##4.Prototype パターン
+同様のインスタンスを生成するために、原型のインスタンスを複製する。
+
+##5.Singleton パターン
+あるクラスについて、インスタンスが単一であることを保証する。
+
+#[編集] 構造に関するパターン
+
+##6.Adapter パターン
+元々関連性のない2つのクラスを接続するクラスを作る。
+
+##7.Bridge パターン
+クラスなどの実装と、呼出し側の間の橋渡しをするクラスを用意し、実装を隠蔽する。
+
+##8.Composite パターン
+再帰的な構造を表現する。
+
+##9.Decorator パターン
+あるインスタンスに対し、動的に付加機能を追加する。Filterとも呼ばれる。
+
+##10.Facade パターン
+複数のサブシステムの窓口となる共通のインタフェースを提供する。
+
+##11.Flyweight パターン
+多数のインスタンスを共有し、インスタンスの構築のための負荷を減らす。
+
+##12.Proxy パターン
+共通のインタフェースをもつインスタンスを内包し、利用者からのアクセスを代理する。Wrapperとも呼ばれる。
+
+#[編集] 振る舞いに関するパターン
+
+##13.Chain of Responsibility パターン
+イベントの送受信を行う複数のオブジェクトを鎖状につなぎ、それらの間をイベントが渡されてゆくようにする。
+
+##14.Command パターン
+複数の異なる操作について、それぞれに対応するオブジェクトを用意し、オブジェクトを切り替えること
+で操作の切替えを実現する。
+
+##15.Interpreter パターン
+構文解析のために、文法規則を反映するクラス構造を作る。
+
+##16.Iterator パターン
+複数の要素を内包するオブジェクトのすべての要素に順にアクセスする方法を提供する。反復子。
+
+##17.Mediator パターン
+オブジェクト間の相互作用を仲介するオブジェクトを定義し、オブジェクト間の結合度を低くする。
+
+##18.Memento パターン
+データ構造に対する一連の操作のそれぞれを記録しておき、以前の状態の復帰または操作の再現が行えるようにする。
+
+##19.Observer パターン
+インスタンスの変化を他のインスタンスから監視できるようにする。Listenerとも呼ばれる。
+
+##20.State パターン
+オブジェクトの状態を変化させることで、処理内容を変えられるようにする。
+
+##21.Strategy パターン
+データ構造に対して適用する一連のアルゴリズムをカプセル化し、アルゴリズムの切替えを容易にする。
+
+##22.Template Method パターン
+あるアルゴリズムの途中経過で必要な処理を抽象メソッドに委ね、その実装を変えることで処理が変えられるようにする。
+
+##23.Visitor パターン
+データ構造を保持するクラスと、それに対して処理を行うクラスを分離する。
